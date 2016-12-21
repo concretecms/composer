@@ -4,7 +4,6 @@
   "type": "project",
   "license": "MIT",
   "minimum-stability": "dev",
-  "version": "0.0.9",
   "require": {
     "concrete5/concrete5": "^8.0"
   },
