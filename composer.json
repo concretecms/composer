@@ -4,6 +4,7 @@
   "type": "project",
   "license": "MIT",
   "minimum-stability": "dev",
+  "version": "0.0.9",
   "require": {
     "concrete5/concrete5": "^8.0"
   },
@@ -14,5 +15,10 @@
     "post-install-cmd": [
       "cp -af vendor/concrete5/concrete5/concrete ./"
     ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "8.x-dev"
+    }
   }
 }
