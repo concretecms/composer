@@ -1,0 +1,4 @@
+/vendor/
+/concrete/
+composer.lock
+.idea
