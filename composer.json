@@ -9,7 +9,7 @@
   },
   "scripts": {
     "post-update-cmd": [
-      "VERSION=`composer show -VD | awk -F\" \" '{print $2}'`;mkdir -p updates/$VERSION && cp -af vendor/concrete5/concrete5/concrete updates/$VERSION/concrete"
+      "cp -af vendor/concrete5/concrete5/concrete ./"
     ],
     "post-install-cmd": [
       "cp -af vendor/concrete5/concrete5/concrete ./"
