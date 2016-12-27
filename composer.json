@@ -2,22 +2,36 @@
   "name": "concrete5/composer",
   "description": "concrete5 composer based installation",
   "type": "project",
-  "license": "MIT",
   "minimum-stability": "dev",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/olsgreen/concrete5.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/c5labs/concrete5-core-installer.git"
+    }
+  ],
   "require": {
-    "concrete5/concrete5": "^8.0"
+    "c5labs/concrete5-core-installer": "dev-master",
+    "concrete5/concrete5": "dev-core-type"
   },
-  "scripts": {
-    "post-update-cmd": [
-      "cp -af vendor/concrete5/concrete5/concrete ./"
-    ],
-    "post-install-cmd": [
-      "cp -af vendor/concrete5/concrete5/concrete ./"
-    ]
+  "config": {
+    "preferred-install": "dist"
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "8.x-dev"
+    "installer-paths": {
+      "public/concrete": ["type:concrete5-core"],
+      "public/application/themes/{$name}": ["type:concrete5-theme"],
+      "public/packages/{$name}": ["type:concrete5-package"],
+      "public/application/blocks/{$name}": ["type:concrete5-block"]
+    },
+    "scaffolder": {
+      "exclude-paths": [
+        "application/bootstrap/autoload.php"
+      ]
     }
   }
 }
