@@ -1,25 +1,9 @@
 <?php
+defined('C5_EXECUTE') or die('Access Denied.');
 
-$vendorPath = realpath(__DIR__ . '/../../../vendor');
+# Load in the composer vendor files
+require_once __DIR__ . "/../../../vendor/autoload.php";
 
-/*
- * ----------------------------------------------------------------------------
- * Load all composer autoload items.
- * ----------------------------------------------------------------------------
- */
+# Add the vendor directory to the include path
+ini_set('include_path', __DIR__ . "/../../vendor" . PATH_SEPARATOR . get_include_path());
 
-// If the checker class is already provided, likely we have been included in a separate composer project
-if (!class_exists(\DoctrineXml\Checker::class)) {
-    // Otherwise, lets try to load composer ourselves
-    if (!@include($vendorPath.'/autoload.php')) {
-        echo 'Third party libraries not installed. Ensure that you have installed the dependencies by running the composer install command.';
-        die(1);
-    }
-}
-
-/*
- * ----------------------------------------------------------------------------
- * Add the vendor path to the list of include paths
- * ----------------------------------------------------------------------------
- */
-ini_set('include_path', $vendorPath . PATH_SEPARATOR . get_include_path());
