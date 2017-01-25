@@ -23,11 +23,6 @@
       "public/application/themes/{$name}": ["type:concrete5-theme"],
       "public/packages/{$name}": ["type:concrete5-package"],
       "public/application/blocks/{$name}": ["type:concrete5-block"]
-    },
-    "scaffolder": {
-      "exclude-paths": [
-        "application/bootstrap/autoload.php"
-      ]
     }
   }
 }
