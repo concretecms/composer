@@ -1,22 +1,18 @@
 {
   "name": "concrete5/composer",
-  "description": "concrete5 composer based installation",
+  "description": "A fully featured skeleton for composer managed concrete5 site",
   "type": "project",
   "minimum-stability": "dev",
   "license": "MIT",
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/olsgreen/concrete5.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/c5labs/concrete5-core-installer.git"
+      "url": "https://github.com/KorvinSzanto/installers.git"
     }
   ],
   "require": {
-    "c5labs/concrete5-core-installer": "dev-master",
-    "concrete5/concrete5": "dev-core-type"
+    "composer/installers": "dev-patch-1",
+    "concrete5/core": "~8.1"
   },
   "config": {
     "preferred-install": "dist"
