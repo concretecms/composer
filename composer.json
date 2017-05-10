@@ -1,15 +1,9 @@
 {
   "name": "concrete5/composer",
-  "description": "A fully featured skeleton for composer managed concrete5 site",
+  "description": "A fully featured skeleton for a composer managed concrete5 site",
   "type": "project",
   "minimum-stability": "dev",
   "license": "MIT",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/KorvinSzanto/installers.git"
-    }
-  ],
   "prefer-stable": true,
   "require": {
     "composer/installers": "1.3.0",
