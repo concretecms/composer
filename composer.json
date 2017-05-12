@@ -1,25 +1,24 @@
 {
   "name": "concrete5/composer",
-  "description": "concrete5 composer based installation",
+  "description": "A fully featured skeleton for a composer managed concrete5 site",
   "type": "project",
-  "license": "MIT",
   "minimum-stability": "dev",
+  "license": "MIT",
   "prefer-stable": true,
   "require": {
-    "concrete5/concrete5": "^8.0",
+    "composer/installers": "1.3.0",
+    "concrete5/core": "dev-develop",
     "illuminate/container": "5.2.*"
   },
-  "scripts": {
-    "post-update-cmd": [
-      "cp -af vendor/concrete5/concrete5/concrete ./"
-    ],
-    "post-install-cmd": [
-      "cp -af vendor/concrete5/concrete5/concrete ./"
-    ]
+  "config": {
+    "preferred-install": "dist"
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "8.x-dev"
+    "installer-paths": {
+      "public/concrete": ["type:concrete5-core"],
+      "public/application/themes/{$name}": ["type:concrete5-theme"],
+      "public/packages/{$name}": ["type:concrete5-package"],
+      "public/application/blocks/{$name}": ["type:concrete5-block"]
     }
   }
 }
