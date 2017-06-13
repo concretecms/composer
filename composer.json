@@ -14,6 +14,9 @@
     "preferred-install": "dist"
   },
   "extra": {
+    "branch-alias": {
+      "dev-master": "8.x-dev"
+    },
     "installer-paths": {
       "public/concrete": ["type:concrete5-core"],
       "public/application/themes/{$name}": ["type:concrete5-theme"],
