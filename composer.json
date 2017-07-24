@@ -2,7 +2,6 @@
   "name": "concrete5/composer",
   "description": "A fully featured skeleton for a composer managed concrete5 site",
   "type": "project",
-  "minimum-stability": "dev",
   "license": "MIT",
   "prefer-stable": true,
   "require": {
