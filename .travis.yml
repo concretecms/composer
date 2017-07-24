@@ -1,0 +1,9 @@
+language: php
+cache:
+  directories:
+    - $HOME/.composer/cache
+before-script:
+  - composer update
+build:
+  # Replace this build step with your own build step if using travis
+  - concrete5 c5:status
