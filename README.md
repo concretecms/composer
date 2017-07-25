@@ -1,5 +1,10 @@
 # Composer Based Skeleton for concrete5 sites
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
+![Software License][ico-license]
+[![Build Status][ico-travis]][link-travis]
+[![Total Downloads][ico-downloads]][link-downloads]
+
 ## Creating a new project
 
 First choose a name for your project. In this example, our project is called "the_oregon_trail"
@@ -45,3 +50,14 @@ Note: You can also use composer's repository functionality to manage private pac
 $ composer require concrete5/sample_composer_package
 $ ./vendor/bin/concrete5 c5:package-install sample_composer_package
 ```
+
+
+
+[ico-version]: https://img.shields.io/packagist/v/concrete5/composer.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/concrete5/composer/master.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/concrete5/composer.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/:vendor/:package_name
+[link-travis]: https://travis-ci.org/:vendor/:package_name
+[link-downloads]: https://packagist.org/packages/:vendor/:package_name
