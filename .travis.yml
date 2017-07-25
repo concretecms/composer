@@ -6,4 +6,4 @@ before-script:
   - composer update
 script:
   # Replace this build step with your own build step if using travis
-  - concrete5 c5:status
+  - ./vendor/bin/concrete5 c5:status
