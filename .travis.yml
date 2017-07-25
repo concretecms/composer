@@ -2,8 +2,8 @@ language: php
 cache:
   directories:
     - $HOME/.composer/cache
-before-script:
-  - composer update
+before_script:
+  - composer install
 script:
   # Replace this build step with your own build step if using travis
   - ./vendor/bin/concrete5 c5:status
