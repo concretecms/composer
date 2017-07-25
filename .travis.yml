@@ -5,5 +5,7 @@ cache:
 before_script:
   - composer install
 script:
-  # Replace this build step with your own build step if using travis
-  - ./vendor/bin/concrete5 c5:status
+  # Replace these build steps with your own build steps if using travis
+  - ./vendor/bin/concrete5 c5:info
+  - ./composer require concrete5/sample_composer_package
+  - ls public/packages/sample_composer_package/controller.php
