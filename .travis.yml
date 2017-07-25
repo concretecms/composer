@@ -1,4 +1,6 @@
 language: php
+php:
+  - '7.0'
 cache:
   directories:
     - $HOME/.composer/cache
@@ -7,5 +9,5 @@ before_script:
 script:
   # Replace these build steps with your own build steps if using travis
   - ./vendor/bin/concrete5 c5:info
-  - ./composer require concrete5/sample_composer_package
+  - composer require concrete5/sample_composer_package
   - ls public/packages/sample_composer_package/controller.php
