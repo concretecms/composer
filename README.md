@@ -1,7 +1,7 @@
 # Composer Based Skeleton for concrete5 sites
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-![Software License][ico-license]
+[![Software License][ico-license]](LICENSE.txt)
 [![Build Status][ico-travis]][link-travis]
 [![Total Downloads][ico-downloads]][link-downloads]
 
@@ -58,6 +58,6 @@ $ ./vendor/bin/concrete5 c5:package-install sample_composer_package
 [ico-travis]: https://img.shields.io/travis/concrete5/composer/master.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/concrete5/composer.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/:vendor/:package_name
-[link-travis]: https://travis-ci.org/:vendor/:package_name
-[link-downloads]: https://packagist.org/packages/:vendor/:package_name
+[link-packagist]: https://packagist.org/packages/concrete5/composer
+[link-travis]: https://travis-ci.org/concrete5/composer
+[link-downloads]: https://packagist.org/packages/concrete5/composer
