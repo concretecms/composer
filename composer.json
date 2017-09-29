@@ -13,7 +13,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "8.x-dev"
+      "dev-8.x": "8.x-dev"
     },
     "installer-paths": {
       "public/concrete": ["type:concrete5-core"],
