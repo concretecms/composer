@@ -10,7 +10,7 @@
 First choose a name for your project. In this example, our project is called "the_oregon_trail"
 
 ```bash
-$ composer create-project -n concrete5/composer:8.x-dev the_oregon_trail
+$ composer create-project -n concrete5/composer the_oregon_trail
 ```
 
 Now you have the latest version of concrete5 and you're ready to install!
