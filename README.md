@@ -51,7 +51,7 @@ $ composer require concrete5/sample_composer_package
 $ ./vendor/bin/concrete5 c5:package-install sample_composer_package
 ```
 
-
+Do you want to install an add-on that is free in the concrete5 marketplace, but not on packagist.org? Go to https://composer.concrete5.org.
 
 [ico-version]: https://img.shields.io/packagist/v/concrete5/composer.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
