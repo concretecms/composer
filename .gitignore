@@ -1,6 +1,5 @@
 # Ignore composer stuff
 /vendor/
-composer.lock
 
 # Ignore concrete5 stuff
 public/concrete
@@ -8,3 +7,9 @@ public/application/files
 
 # Ignore developer stuff
 .idea
+node_modules
+
+# Stuff that's likely to change
+composer.lock
+yarn.lock
+mix-manifest.json
