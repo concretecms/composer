@@ -3,10 +3,10 @@ let mix = require('laravel-mix');
 
 mix
     // Simple ES6 JavaScript
-    .babel('resources/js/app.js', 'public/application/js/app.js')
+    .babel('resources/js/main.js', 'public/application/js/main.js')
 
     // Less CSS Compilation
-    .less('resources/css/app.less', 'public/application/css/app.css');
+    .less('resources/css/main.less', 'public/application/css/main.css');
 
 // Other options:
 // mix.sass, mix.js, mix.scripts, mix.stylus, mix.styles, mix.react, mix.webpackConfig, mix.copy, mix.copyDirectory,
