@@ -17,6 +17,11 @@ Now you have the latest version of concrete5 and you're ready to install!
 
 Note: This is a skeleton project. So once you create a project, you can install your own VCS and change the README and all that.
 
+## Starting with the concrete5 latest develop
+
+```bash
+$ composer create-project -n concrete5/composer:8.x-dev the_oregon_trail
+```
 
 ## Installing concrete5
 
