@@ -8,6 +8,7 @@ public/application/files
 # Ignore developer stuff
 .idea
 node_modules
+.env
 
 # Stuff that's likely to change
 composer.lock

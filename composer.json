@@ -11,7 +11,8 @@
   },
   "require": {
     "composer/installers": "^1.3",
-    "concrete5/core": "^8.2"
+    "concrete5/core": "^8.2",
+    "vlucas/phpdotenv": "^2.4"
   },
   "config": {
     "preferred-install": "dist"
