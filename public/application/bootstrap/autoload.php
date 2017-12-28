@@ -10,7 +10,6 @@ try {
     $env->overload();
 } catch (\Exception $e) {
     // Ignore any errors
-    dd($e);
 }
 
 # Add the vendor directory to the include path
