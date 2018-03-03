@@ -36,6 +36,11 @@ and use the interactive install commmand that comes with concrete5's CLI tool
 ```bash
 $ ./vendor/bin/concrete5 c5:install -i
 ```
+in a Windows environment, navigate to `\vendor\bin\` first, then run
+
+```bash
+$ concrete5 c5:install -i
+```
 Follow directions and your site will begin installing!
 
 
