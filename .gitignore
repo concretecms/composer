@@ -9,8 +9,3 @@ public/application/files
 .idea
 node_modules
 .env
-
-# Stuff that's likely to change
-composer.lock
-yarn.lock
-mix-manifest.json
