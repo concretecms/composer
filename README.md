@@ -42,7 +42,7 @@ Follow directions and your site will begin installing!
 Note: You can also run the CLI tool directly with PHP
 
 ```bash
-$ php public/concrete/bin/concrete5.php
+$ ./public/concrete/bin/concrete5
 ```
 
 ## Install a concrete5 package using composer
