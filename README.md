@@ -62,7 +62,7 @@ Using Yarn run (If you're using NPM instead, just swap `yarn` for `npm`.):
 
 ```
 yarn install
-yarn dev
+yarn run dev
 ```
 
 To compile assets for development.
