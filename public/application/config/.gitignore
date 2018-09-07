@@ -1,1 +1,2 @@
-*.php
+database.php
+generated_overrides
