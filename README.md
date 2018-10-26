@@ -19,8 +19,15 @@ Note: This is a skeleton project. So once you create a project, you can install 
 
 ## Starting with the concrete5 latest develop
 
+First create a new project
 ```bash
-$ composer create-project -n concrete5/composer:8.x-dev the_oregon_trail
+$ composer create-project -n concrete5/composer the_oregon_trail
+```
+
+Then navigate into that project and require the `dev-develop` version of `concrete5/core`
+```bash
+$ cd the_oregon_trail
+$ composer require concrete5/core:dev-develop
 ```
 
 ## Installing concrete5
