@@ -9,10 +9,19 @@
       "ConcreteComposer\\" : "./src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "ConcreteComposer\\" : "./tests"
+    }
+  },
   "require": {
     "composer/installers": "^1.3",
     "concrete5/core": "^8.2",
     "vlucas/phpdotenv": "^2.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "^1.2"
   },
   "config": {
     "preferred-install": "dist"
@@ -27,5 +36,8 @@
       "public/packages/{$name}": ["type:concrete5-package"],
       "public/application/blocks/{$name}": ["type:concrete5-block"]
     }
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
