@@ -2,15 +2,18 @@
 /vendor/
 
 # Ignore concrete5 stuff
-public/concrete
-public/application/files
+/public/concrete
+/public/application/files
 
 # Ignore build files
-public/application/css/main.css
-public/application/js/main.js
+/public/application/css/main.css
+/public/application/js/main.js
 
 # Ignore developer stuff
-.idea
-node_modules
-.env
-public/mix-manifest.json
+/.idea
+/node_modules
+/.env
+/public/mix-manifest.json
+/phpunit.xml
+/build
+/.phpunit.*
