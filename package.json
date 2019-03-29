@@ -13,7 +13,7 @@
     "laravel-mix": "^4.0.7"
   },
   "devDependencies": {
-    "less": "^2.7.3",
+    "less": "^3.9.0",
     "less-loader": "^4.1.0"
   }
 }
