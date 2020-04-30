@@ -65,14 +65,62 @@ $ ./vendor/bin/concrete5 c5:package-install sample_composer_package
 
 ## Compiling JS / CSS assets
 This library uses [Laravel Mix][link-mix]. See [webpack.mix.js][link-webpack-mix-file].
-Using Yarn run (If you're using NPM instead, just swap `yarn` for `npm`.):
+To build assets:
 
-```
-yarn install
-yarn dev
+```bash
+npm install
+npm run dev   # Build for development
+npm run hot   # Build with hot reloading enabled (See hot reloading section)
+npm run watch # Build with a watcher that rebuilds when files change
+npm run prod  # Build for production
 ```
 
-To compile assets for development.
+### Hot Module Replacement
+Hot module replacement (hot reloading) allows you to write code and instantly see the changes in your browser, without reloading the page.
+In order to use hot reloading with concrete5, you'll want to use the `mix` and `mixAsset` helper functions to wrap your
+js and css urls. These functions make it so that your assets automatically detect hot reloading mode and output the
+appropriate urls, they are safe to use in production:
+
+In a page theme:
+```php
+<?php
+use function Concrete5\Composer\mixAsset;
+...
+
+class PageTheme extends Theme
+{
+  public function registerAssets()
+  {
+    $this->requireAsset(mixAsset('/path/to/file.js'));
+  }
+}
+```
+
+```php
+<?php
+use function Concrete5\Composer\mixAsset;
+...
+
+class Controller extends BlockController
+{
+    public function registerViewAssets()
+    {
+        $this->requireAsset(mixAsset('/path/to/js/file.js'));
+        $this->requireAsset(mixAsset('/path/to/css/file.css'));
+    }
+}
+```
+or in a theme template:
+```php
+<?php
+use function Concrete5\Composer\mix;
+?>
+
+<script src='<?= mix('/path/to/your/asset.js') ?>'></script>
+<link href='<?= mix('/path/to/your/asset.css') ?>' />
+```
+
+## Free marketplace addons
 
 Do you want to install an add-on that is free in the concrete5 marketplace, but not on packagist.org? Go to https://composer.concrete5.org.
 
@@ -86,3 +134,4 @@ Do you want to install an add-on that is free in the concrete5 marketplace, but 
 [link-downloads]: https://packagist.org/packages/concrete5/composer
 [link-mix]: https://laravel.com/docs/5.5/mix
 [link-webpack-mix-file]: ./webpack.mix.js
+
