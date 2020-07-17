@@ -16,7 +16,7 @@ mix
     .setPublicPath('public')
 
     // Simple ES6 JavaScript
-    .babel('resources/js/main.js', 'public/application/js/main.js')
+    .js('resources/js/main.js', 'public/application/js/main.js')
 
     // Less CSS Compilation
     .sass('resources/css/main.scss', 'public/application/css/main.css')
