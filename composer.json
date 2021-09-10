@@ -21,12 +21,16 @@
     "composer/installers": "^1.3",
     "concrete5/core": "^8.2",
     "concrete5/dependency-patches": "^1.4.0",
+    "concrete5/phpass-compat": ">=1",
     "vlucas/phpdotenv": "^2.4",
     "doctrine/dbal": "<2.11"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.3|^8.0",
     "mockery/mockery": "^0.9.9|^1.2"
+  },
+  "provide": {
+    "hautelook/phpass": "*"
   },
   "config": {
     "preferred-install": "dist"
