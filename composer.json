@@ -1,5 +1,5 @@
 {
-  "name": "concrete5/composer",
+  "name": "concretecms/composer",
   "description": "A fully featured skeleton for a composer managed concrete5 site",
   "type": "project",
   "license": "MIT",
