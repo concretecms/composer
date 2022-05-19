@@ -1,7 +1,7 @@
-# Ignore composer stuff
+# Ignore Composer stuff
 /vendor/
 
-# Ignore concrete5 stuff
+# Ignore Concrete stuff
 /public/concrete
 /public/application/files
 

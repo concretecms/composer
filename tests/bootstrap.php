@@ -4,7 +4,7 @@ declare(strict_types=1);
 // Load in composer
 require_once __DIR__ . '/../vendor/autoload.php';
 
-// Load in concrete5 constants
+// Load in concrete constants
 require_once __DIR__ . '/../public/concrete/bootstrap/configure.php';
 
 // Load aliases because some core classes extend them

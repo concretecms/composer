@@ -2,7 +2,7 @@
 
 return [
     'updates' => [
-        // Skip the automatic check of new concrete5 versions availability
+        // Skip the automatic check of new Concrete versions availability
         'skip_core' => true,
     ],
     'debug' => [

@@ -1,4 +1,4 @@
-# Composer Based Skeleton for concrete5 sites
+# Composer Based Skeleton for Concrete sites
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.txt)
@@ -10,38 +10,38 @@
 First choose a name for your project. In this example, our project is called "the_oregon_trail"
 
 ```bash
-$ composer create-project -n concrete5/composer the_oregon_trail
+$ composer create-project -n concretecms/composer the_oregon_trail
 ```
 
-Now you have the latest version of concrete5 and you're ready to install!
+Now you have the latest version of Concrete and you're ready to install!
 
 Note: This is a skeleton project. So once you create a project, you can install your own VCS and change the README and all that.
 
-## Starting with the concrete5 latest develop
+## Starting with the Concrete latest develop
 
 First create a new project
 ```bash
-$ composer create-project -n concrete5/composer the_oregon_trail
+$ composer create-project -n concretecms/composer the_oregon_trail
 ```
 
-Then navigate into that project and require the `dev-develop` version of `concrete5/core`
+Then navigate into that project and require the `dev-develop` version of `concretecms/core`
 ```bash
 $ cd the_oregon_trail
-$ composer require concrete5/core:dev-develop
+$ composer require concretecms/core:dev-develop
 ```
 
-## Installing concrete5
+## Installing Concrete
 
-Navigate into your new concrete5 project
+Navigate into your new Concrete project
 
 ```bash
 $ cd the_oregon_trail
 ```
 
-and use the interactive install commmand that comes with concrete5's CLI tool
+and use the interactive install commmand that comes with Concrete's CLI tool
 
 ```bash
-$ ./vendor/bin/concrete5 c5:install -i
+$ ./vendor/bin/cConcrete c5:install -i
 ```
 Follow directions and your site will begin installing!
 
@@ -49,18 +49,18 @@ Follow directions and your site will begin installing!
 Note: You can also run the CLI tool directly with PHP
 
 ```bash
-$ ./public/concrete/bin/concrete5
+$ ./public/concrete/bin/concrete
 ```
 
-## Install a concrete5 package using composer
+## Install a Concrete package using composer
 
-Find the package you'd like to install on [packagist.org](https://packagist.org) (in this case [`concrete5/sample_composer_package`](https://packagist.org/packages/concrete5/sample_composer_package))
+Find the package you'd like to install on [packagist.org](https://packagist.org) (in this case [`concretecms/sample_composer_package`](https://packagist.org/packages/concretecms/sample_composer_package))
 
 Note: You can also use composer's repository functionality to manage private packages using composer
 
 ```bash
-$ composer require concrete5/sample_composer_package
-$ ./vendor/bin/concrete5 c5:package-install sample_composer_package
+$ composer require concretecms/sample_composer_package
+$ ./vendor/bin/concrete c5:package-install sample_composer_package
 ```
 
 ## Compiling JS / CSS assets
@@ -77,7 +77,7 @@ npm run prod  # Build for production
 
 ### Hot Module Replacement
 Hot module replacement (hot reloading) allows you to write code and instantly see the changes in your browser, without reloading the page.
-In order to use hot reloading with concrete5, you'll want to use the `mix` and `mixAsset` helper functions to wrap your
+In order to use hot reloading with Concrete, you'll want to use the `mix` and `mixAsset` helper functions to wrap your
 js and css urls. These functions make it so that your assets automatically detect hot reloading mode and output the
 appropriate urls, they are safe to use in production:
 
@@ -122,16 +122,16 @@ use function Concrete5\Composer\mix;
 
 ## Free marketplace addons
 
-Do you want to install an add-on that is free in the concrete5 marketplace, but not on packagist.org? Go to https://composer.concrete5.org.
+Do you want to install an add-on that is free in the Concrete marketplace, but not on packagist.org? Go to https://composer.concretecms.org/.
 
-[ico-version]: https://img.shields.io/packagist/v/concrete5/composer.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/concretecms/composer.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/concrete5/composer/master.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/concrete5/composer.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/concretecms/composer/master.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/concretecms/composer.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/concrete5/composer
-[link-travis]: https://travis-ci.org/concrete5/composer
-[link-downloads]: https://packagist.org/packages/concrete5/composer
+[link-packagist]: https://packagist.org/packages/concretecms/composer
+[link-travis]: https://travis-ci.org/concretecms/composer
+[link-downloads]: https://packagist.org/packages/concretecms/composer
 [link-mix]: https://laravel.com/docs/5.5/mix
 [link-webpack-mix-file]: ./webpack.mix.js
 
