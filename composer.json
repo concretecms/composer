@@ -19,7 +19,7 @@
   },
   "require": {
     "composer/installers": "^1.3",
-    "concretecms/core": "^9.1",
+    "concrete/core": "^9.1",
     "concretecms/dependency-patches": "^1.4.0",
     "vlucas/phpdotenv": "^2.4"
   },
