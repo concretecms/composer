@@ -41,7 +41,7 @@ $ cd the_oregon_trail
 and use the interactive install commmand that comes with Concrete's CLI tool
 
 ```bash
-$ ./vendor/bin/cConcrete c5:install -i
+$ ./vendor/bin/concrete c5:install -i
 ```
 Follow directions and your site will begin installing!
 
