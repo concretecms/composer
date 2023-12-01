@@ -41,7 +41,7 @@ $ cd the_oregon_trail
 and use the interactive install commmand that comes with Concrete's CLI tool
 
 ```bash
-$ ./vendor/bin/concrete c5:install -i
+$ ./vendor/bin/concrete5 c5:install -i
 ```
 Follow directions and your site will begin installing!
 
@@ -60,7 +60,7 @@ Note: You can also use composer's repository functionality to manage private pac
 
 ```bash
 $ composer require concretecms/sample_composer_package
-$ ./vendor/bin/concrete c5:package-install sample_composer_package
+$ ./vendor/bin/concrete5 c5:package-install sample_composer_package
 ```
 
 ## Compiling JS / CSS assets
