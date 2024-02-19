@@ -38,6 +38,14 @@ Navigate into your new Concrete project
 $ cd the_oregon_trail
 ```
 
+for the moment you need to create some symbolic links for the installer to work. This is due to some structural changes that are not reflected in the rest of the code.
+
+```bash
+ln -s vendor/concrete5/core concrete
+ln -s public/application application
+ln -s public/packages packages
+```
+
 and use the interactive install commmand that comes with Concrete's CLI tool
 
 ```bash
