@@ -22,6 +22,7 @@ $app->detectEnvironment(
         'production' => array(
             'live.site',
         ),
-    ));
+    )
+);
 
 return $app;

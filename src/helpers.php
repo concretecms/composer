@@ -1,8 +1,8 @@
 <?php
+
 namespace Concrete5\Composer;
 
 use Concrete\Core\Asset\AssetList;
-use Concrete\Core\Asset\AssetPointer;
 use Concrete\Core\Asset\CssAsset;
 use Concrete\Core\Asset\JavascriptAsset;
 use Illuminate\Support\Str;
