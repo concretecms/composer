@@ -7,7 +7,7 @@ use Concrete\Core\Asset\CssAsset;
 use Concrete\Core\Asset\JavascriptAsset;
 use Illuminate\Support\Str;
 
-if (!function_exists(mix::class)) {
+if (!function_exists('mix')) {
     /**
      * Handle loading in laravel mix assets
      * This function is useful in development, do:
@@ -72,7 +72,7 @@ if (!function_exists(mix::class)) {
     }
 }
 
-if (!function_exists(mixAsset::class)) {
+if (!function_exists('mixAsset')) {
     /**
      * Resolve a mix built file and return an Asset instance for it
      *
@@ -82,8 +82,12 @@ if (!function_exists(mixAsset::class)) {
      *
      * @return string
      */
-    function mixAsset($path, $extension = null, $manifestDirectory = __DIR__ . '/../public')
-    {
+    function mixAsset(
+        string $path,
+        ?string $extension = null,
+        string $manifestDirectory = __DIR__ . '/../public',
+        AssetList $assetList = null
+    ) {
         // First let's normalize the given directory
         $manifestDirectory = realpath($manifestDirectory);
         if (!$manifestDirectory || !is_dir($manifestDirectory)) {
@@ -95,7 +99,7 @@ if (!function_exists(mixAsset::class)) {
         $handle = 'mix' . '/' . $manifestDirectory . '/' . $mixPath;
 
         // Handle creating the proper asset type based on the extension
-        $extension = $extension ?: pathinfo($path, PATHINFO_EXTENSION);
+        $extension = (string) ($extension ?: pathinfo($path, PATHINFO_EXTENSION));
         switch (strtolower($extension)) {
             case 'js':
                 $asset = new JavascriptAsset($handle);
@@ -113,7 +117,7 @@ if (!function_exists(mixAsset::class)) {
 
         // Register the asset on the way out, we do this so that we can leverage the asset system's ability to load
         // dependencies only once per page even if it's required multiple times.
-        $assetList = AssetList::getInstance();
+        $assetList = $assetList ?: AssetList::getInstance();
         $assetList->registerAsset($asset);
 
         return $asset;

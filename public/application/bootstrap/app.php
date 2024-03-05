@@ -1,4 +1,6 @@
 <?php
+/* @var Concrete\Core\Application\Application $app */
+/* @var Concrete\Core\Console\Application $console only set in CLI environment */
 
 /*
  * ----------------------------------------------------------------------------
@@ -8,16 +10,17 @@
  *
  * ## Set a theme by route:
  *
- * Route::setThemeByRoute('/login', 'greek_yogurt');
+ * $app->make('\Concrete\Core\Page\Theme\ThemeRouteCollection')
+ * ->setThemeByRoute('/login', 'greek_yogurt');
  *
  *
  * ## Register a class override.
  *
- * Core::bind('helper/feed', function() {
+ * $app->bind('helper/feed', function() {
  * 	 return new \Application\Core\CustomFeedHelper();
  * });
  *
- * Core::bind('\Concrete\Attribute\Boolean\Controller', function($app, $params) {
+ * $app->bind('\Concrete\Attribute\Boolean\Controller', function($app, $params) {
  * 	return new \Application\Attribute\Boolean\Controller($params[0]);
  * });
  *

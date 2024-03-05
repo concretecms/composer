@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+const APP_CHARSET = 'UTF-8';
+
 // Load in composer
 require_once __DIR__ . '/../vendor/autoload.php';
 

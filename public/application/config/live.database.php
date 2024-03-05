@@ -5,11 +5,12 @@ return [
     'connections' => [
         'concrete' => [
             'driver' => 'c5_pdo_mysql',
-            'server' => getenv('DB_HOSTNAME'),
-            'database' => getenv('DB_DATABASE'),
-            'username' => getenv('DB_USERNAME'),
-            'password' => getenv('DB_PASSWORD'),
-            'charset' => getenv('DB_CHARSET'),
+            'server' => $_ENV['DB_HOSTNAME'],
+            'database' => $_ENV['DB_DATABASE'],
+            'username' => $_ENV['DB_USERNAME'],
+            'password' => $_ENV['DB_PASSWORD'],
+            'character_set' => $_ENV['DB_CHARSET'],
+            'collation' => $_ENV['DB_COLLATION'],
         ],
     ],
 ];
