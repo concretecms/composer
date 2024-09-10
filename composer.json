@@ -40,10 +40,22 @@
       "concretecms/dependency-patches"
     ],
     "installer-paths": {
-      "public/concrete": ["type:concrete5-core"],
-      "public/application/themes/{$name}": ["type:concrete5-theme"],
-      "public/packages/{$name}": ["type:concrete5-package"],
-      "public/application/blocks/{$name}": ["type:concrete5-block"]
+      "public/concrete": [
+        "type:concretecms-core",
+        "type:concrete5-core"
+      ],
+      "public/application/themes/{$name}": [
+        "type:concretecms-theme",
+        "type:concrete5-theme"
+      ],
+      "public/packages/{$name}": [
+        "type:concretecms-package",
+        "type:concrete5-package"
+      ],
+      "public/application/blocks/{$name}": [
+        "type:concretecms-block",
+        "type:concrete5-block"
+      ]
     }
   },
   "scripts": {
